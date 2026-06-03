@@ -1,0 +1,4 @@
+node_modules/
+dist/
+.claude/
+test_app.mjs
