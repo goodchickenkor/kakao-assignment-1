@@ -1,64 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Todo App</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <div class="container">
-
-    <header class="app-header">
-      <h1 class="app-title">My Todo</h1>
-    </header>
-
-    <!-- 주간 뷰 네비게이션 영역 -->
-    <section class="week-nav">
-      <div class="week-header">
-        <button id="prevWeekBtn" class="btn-nav" aria-label="이전 주">&#8249;</button>
-        <div class="week-title">
-          <span id="weekRangeLabel" class="week-range-label"></span>
-          <button id="todayBtn" class="today-btn hidden">오늘</button>
-        </div>
-        <button id="nextWeekBtn" class="btn-nav" aria-label="다음 주">&#8250;</button>
-      </div>
-      <div id="weekDays" class="week-days"></div>
-    </section>
-
-    <!-- 입력 영역 -->
-    <section class="input-section">
-      <div class="input-wrapper">
-        <input
-          type="text"
-          id="todoInput"
-          class="todo-input"
-          placeholder="할 일을 입력하세요"
-          maxlength="100"
-        />
-        <button id="addBtn" class="btn btn-add">추가</button>
-      </div>
-      <!-- 빈 입력값 경고 메시지 (기본 숨김) -->
-      <p id="warningMsg" class="warning-msg hidden">할 일을 입력해주세요.</p>
-    </section>
-
-    <!-- 필터 탭 영역 -->
-    <section class="filter-section">
-      <button class="filter-tab active" data-filter="all">전체</button>
-      <button class="filter-tab" data-filter="active">진행 중</button>
-      <button class="filter-tab" data-filter="completed">완료</button>
-    </section>
-
-    <!-- Todo 목록 영역 -->
-    <section class="list-section">
-      <ul id="todoList" class="todo-list"></ul>
-      <!-- 항목이 없을 때 표시되는 안내 -->
-      <p id="emptyMsg" class="empty-msg hidden"></p>
-    </section>
-
-  </div>
-
-  <script src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
