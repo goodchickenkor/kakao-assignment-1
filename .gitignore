@@ -1,4 +1,10 @@
-node_modules/
+﻿node_modules/
+.next/
 dist/
-.claude/
+.env
+.env.local
+.venv/
+todos.db
+__pycache__/
+.DS_Store
 test_app.mjs
